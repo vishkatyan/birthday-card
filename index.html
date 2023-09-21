@@ -20,11 +20,26 @@
           <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
           <p>Hope your day goes great with your TL😁! </br> Best Regards </br> Ninni  </p>
         </div>
+        
       </div>
-
+      <button class="btn">Play Music</button>
     <script>
-        var audio = new Audio("song.mp3");
-        audio.play();
+      if(true){
+     document.querySelector(".btn").addEventListener("click", function (){
+       
+      //  alert("I got clicked!");
+       var btnHtml = this.innerHTML;
+       switch(btnHtml){
+        case "Play Music": 
+                var wish = new Audio("song.mp3");
+                wish.play();
+            break;
+            default: alert("Press Button Again!");
+       }
+       
+     })
+      
+      }
     </script>
       
 </body>
